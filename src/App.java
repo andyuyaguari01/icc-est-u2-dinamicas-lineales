@@ -9,17 +9,23 @@ public class App {
         runLinkedList();
         runQueue();
         runStack();
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        String texto = "COMPUTACION";
+        String invertido = ejercicio1.invertString(texto);
+        System.out.println(invertido);
+
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        String palabra1 = "radar";
+        String palabra2 = "computacion";
+        System.out.println(palabra1 + " -> " + ejercicio2.esPalindromo(palabra1));
+        System.out.println(palabra2 + " -> " + ejercicio2.esPalindromo(palabra2));
+
+
         
     }
     // ofter-> agrega al final
     // peek -> devuelve el primero sin eliminar
     // poll -> devuelve el primero y lo elimina 
-
-    Ejercicio1 ejercicio1 = new Ejercicio1();
-    String texto = "COMPUTACION";
-    String invertido= ejercicio1.invertString(texto);
-    
-    System.out.println(invertido);
 
 
     private static void runStack() {
@@ -74,16 +80,19 @@ public class App {
        nombres.add("Pedro");
        nombres.add("Maria");
        nombres.add("Diego");
-       System.out.println(nombres.getFirst());
-       System.out.println(nombres.get(2));
-       System.out.println(nombres.getLast());
+       System.out.println("Primero:"+ nombres.getFirst());
+       System.out.println("Poscicion:"+nombres.get(2));
+       System.out.println("Ultimo"+nombres.getLast());
 
        System.out.println(nombres.peek());
-       System.err.println(nombres.size());
+       System.err.println("Tamaño"+nombres.size());
 
        System.out.println(nombres.pop());
-       System.out.println(nombres.size());
+       System.out.println("Tamaño Final"+nombres.size());
        
     }
+    
+    
+    
 
 }

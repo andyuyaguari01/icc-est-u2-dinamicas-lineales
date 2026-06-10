@@ -18,6 +18,8 @@ public class Ejercicio1 {
     
         for( char letra : texto.toCharArray()){
             pila.push(letra);
+        
+            
 
         }
         String invertido = "";
